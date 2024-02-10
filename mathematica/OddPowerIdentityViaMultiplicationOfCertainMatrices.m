@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-BeginPackage["GithubLatexTemplateMathematicaPackage`"]
+BeginPackage["OddPowerIdentityViaMultiplicationOfCertainMatrices`"]
 
 A::usage= "A[n, k] returns the real coefficient A of non-negative integers n, k such that n <= k. 
 See https://kolosovpetro.github.io/pdf/AStudyOnDynamicEquations.pdf."
@@ -22,6 +22,12 @@ timeScaleDerivativeB::usage= "Returns the partial time scale derivative of polyn
 timeScaleDerivaitveOddPower::usage= "Returns the partial time scale derivative of the polynomial X^{2m+1} with respect to the varaible X."
 
 theorem::usage= "Returns the partial dynamic equation identity such that is main result of the manuscript."
+
+UnitMatrix::usage = "Returns unit matrix 1xN"
+
+MatrixA::usage="Returns Mx1 matrix of the coefficients A"
+
+MatrixNK::usage="Returns NxM matrix of k^r (n-k)^r"
 
 Begin["`Private`"]
 
@@ -50,7 +56,19 @@ timeScaleDerivaitveOddPower[m_, x_] := Expand[Limit[(sigma[x]^(2m + 1) - t^(2m +
 
 theorem[m_] := Expand[timeScaleDerivativeX[m, Global`x, sigma[Global`x]] + timeScaleDerivativeB[m, Global`x, Global`x]];
 
+Clear[UnitMatrix];
+UnitMatrix[N_]:= Table[1, {j, 1}, {k, N}];
+
+Clear[MatrixA];
+MatrixA[m_]:= Table[A[m,r], {r, 0, m}];
+
+Clear[MatrixNK];
+MatrixNK[N_, M_]:= Table[k^r*(N-k)^r, {k, 1, N}, {r, 0, M}];
+
 End[ ]
 
 EndPackage[ ]
+
+
+
 
