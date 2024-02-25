@@ -24,6 +24,7 @@ timeScaleDerivaitveOddPower::usage= "Returns the partial time scale derivative o
 theorem::usage= "Returns the partial dynamic equation identity such that is main result of the manuscript."
 
 UnitMatrix::usage = "Returns unit matrix 1xN"
+UnitMatrixMN::usage = "Returns unit matrix MxN"
 
 MatrixA::usage="Returns Mx1 matrix of the coefficients A"
 
@@ -59,6 +60,9 @@ theorem[m_] := Expand[timeScaleDerivativeX[m, Global`x, sigma[Global`x]] + timeS
 Clear[UnitMatrix];
 UnitMatrix[N_]:= Table[1, {j, 1}, {k, N}];
 
+Clear[UnitMatrixMN];
+UnitMatrixMN[M_, N_]:= Table[1, {j, M}, {k, N}];
+
 Clear[MatrixA];
 MatrixA[m_]:= Table[A[m,r], {r, 0, m}];
 
@@ -68,6 +72,9 @@ MatrixNK[N_, M_]:= Table[k^r*(N-k)^r, {k, 1, N}, {r, 0, M}];
 End[ ]
 
 EndPackage[ ]
+
+
+
 
 
 
