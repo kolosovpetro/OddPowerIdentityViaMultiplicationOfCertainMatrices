@@ -1,6 +1,20 @@
 ﻿\begin{itemize}
-    \item $\unitMatrix{M}{N}$ -- $M \times N$ unit matrix that is matrix of all 1's
-    where $M$ is the number of rows and $N$ is the number of columns.
+    \item $\unitMatrix{N}$ -- unit row vector of all 1's having the size $1 \times N$.
+    For example,
+    \[
+        \unitMatrix{5} =
+        \begin{bmatrix}
+            1 & 1 & 1 & 1 & 1
+        \end{bmatrix}
+    \]
+    \item $\matrixK{N}{M}$ -- matrix of size $N \times M$ defined by
+    \[
+        \matrixK{N}{M} = (k^r (N-k)^r)_{0 \leq k \leq N, \; 0 \leq r \leq M}
+    \]
+    \item $\matrixT{M}$ -- column vector of size $M \times 1$ defined by
+    \[
+        \matrixT{M} = (\coeffA{M}{r})_{M=\mathrm{const}, \; 0 \leq r \leq M}
+    \]
     \item Row vector
     \item Column vector
     \item $\mathbf{A} = (a_{ij})$
