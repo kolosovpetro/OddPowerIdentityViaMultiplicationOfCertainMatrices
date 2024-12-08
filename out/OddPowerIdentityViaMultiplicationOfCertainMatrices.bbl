@@ -1,3 +1,25 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{kolosov2016link}
+{Kolosov, Petro}.
+\newblock {On the link between binomial theorem and discrete convolution}.
+\newblock {\em {arXiv preprint arXiv:1603.02468}}, 2016.
+\newblock \url{https://arxiv.org/abs/1603.02468}.
+
+\bibitem{kolosov2022106}
+{Kolosov, Petro}.
+\newblock {106.37 An unusual identity for odd-powers}.
+\newblock {\em {The Mathematical Gazette}}, 106(567):509--513, 2022.
+\newblock \url{https://doi.org/10.1017/mag.2022.129}.
+
+\bibitem{kolosov2018numerator}
+Petro Kolosov.
+\newblock {Entry A302971 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A302971}, 2018.
+
+\bibitem{kolosov2018denominator}
+Petro Kolosov.
+\newblock {Entry A304042 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A304042}, 2018.
 
 \end{thebibliography}

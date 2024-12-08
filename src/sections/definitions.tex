@@ -11,11 +11,30 @@
     \begin{align*}
         \matrixK{N}{M} = (k^r (N-k)^r)_{0 \leq k \leq N, \; 0 \leq r \leq M}
     \end{align*}
-    For example,
+    For example, given $N=4$
+    \begin{align*}
+        \matrixK{4}{M} =
+        \begin{bmatrix}
+            0^0 (4-0)^0 & 0^1 (4-0)^1 & 0^2 (4-0)^2 & \cdots & 0^M (4-0)^M \\
+            1^0 (4-1)^0 & 1^1 (4-1)^1 & 1^2 (4-1)^2 & \cdots & 1^M (4-1)^M \\
+            2^0 (4-2)^0 & 2^1 (4-2)^1 & 2^2 (4-2)^2 & \cdots & 2^M (4-2)^M \\
+            3^0 (4-3)^0 & 3^1 (4-3)^1 & 3^2 (4-3)^2 & \cdots & 3^M (4-3)^M \\
+            4^0 (4-4)^0 & 4^1 (4-4)^1 & 4^2 (4-4)^2 & \cdots & 4^M (4-4)^M
+        \end{bmatrix}
+    \end{align*}
     \item $\matrixT{M}$ -- column vector of dimension $M \times 1$ defined by
     \begin{align*}
         \matrixT{M} = (\coeffA{M}{r})_{M=\mathrm{const}, \; 0 \leq r \leq M}
     \end{align*}
-    where $\coeffA{M}{r}$ is a rational coefficient (literature).
-    For example,
+    where $\coeffA{M}{r}$ is a real coefficient~\cite{kolosov2016link, kolosov2022106, kolosov2018numerator, kolosov2018denominator}.
+    For example, given $M=3$
+    \begin{align*}
+        \matrixT{3} =
+        \begin{bmatrix}
+            1   \\
+            -14 \\
+            0   \\
+            140
+        \end{bmatrix}
+    \end{align*}
 \end{itemize}
