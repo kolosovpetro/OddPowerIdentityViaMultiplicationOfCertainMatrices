@@ -28,9 +28,11 @@ Let be a theorem that states the odd-power identity
 Therefore, the claim that a \(1 \times 1\) matrix with an entry \(a_{1,1} = N^{2M+1}\)
 can be represented as the product of three matrices: \(\unitMatrix{N}\),
 \(\matrixK{N}{M}\), and \(\matrixT{M}\)
-\[
-    \begin{bmatrix}
-        N^{2M+1}
-    \end{bmatrix} = \unitMatrix{N} \times \matrixK{N}{M} \times \matrixT{M}
-\]
 is essentially the odd-power identity~\eqref{eq:odd-power-theorem} expressed through matrix multiplication.
+\begin{theorem} For every integers N, M
+    \[
+        \begin{bmatrix}
+            N^{2M+1}
+        \end{bmatrix} = \unitMatrix{N} \times \matrixK{N}{M} \times \matrixT{M}
+    \]
+\end{theorem}
