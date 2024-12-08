@@ -1,9 +1,5 @@
 # Odd-power identity via multiplication of certain matrices
 
-## Abstract
-
-TODO
-
 ## Build and run using PowerShell (Windows)
 
 - Install `MikTeX`: https://miktex.org/download
