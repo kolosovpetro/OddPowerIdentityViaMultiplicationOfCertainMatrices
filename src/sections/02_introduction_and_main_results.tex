@@ -1,0 +1,36 @@
+Let be a definition of the coefficient $\coeffA{m}{r}$.
+\begin{definition} (Definition of coefficient $\coeffA{m}{r}$.)
+    \begin{equation}
+        \label{eq:definition_coefficient_a}
+        \coeffA{m}{r} =
+        \begin{cases}
+        (2r+1)
+            \binom{2r}{r} & \mathrm{if} \; r=m \\
+            (2r+1) \binom{2r}{r} \sum_{d \geq 2r+1}^{m} \coeffA{m}{d} \binom{d}{2r+1} \frac{(-1)^{d-1}}{d-r}
+            \bernoulli{2d-2r} & \mathrm{if} \; 0 \leq r<m \\
+            0 & \mathrm{if} \; r<0 \; \mathrm{or} \; r>m
+        \end{cases}
+    \end{equation}
+\end{definition}
+Let be a theorem that states the odd-power identity
+\begin{theorem}
+    For every $n\geq 1, \; n,m\in\mathbb{N}$ there are $\coeffA{m}{0}, \coeffA{m}{1},\dots,\coeffA{m}{m}$,
+    such that
+    \begin{equation*}
+        n^{2m+1} = \sum_{k=1}^{n}\sum_{r=0}^{m} \coeffA{m}{r} k^r (n-k)^r
+        \label{eq:odd-power-theorem}
+    \end{equation*}
+    where $\coeffA{m}{r}$ is a real coefficient defined recursively by~\eqref{eq:definition_coefficient_a}.
+    \begin{proof}
+        The proof is given in~\cite{kolosov2016link, kolosov2022106}.
+    \end{proof}
+\end{theorem}
+Therefore, the claim that a \(1 \times 1\) matrix with an entry \(a_{1,1} = N^{2M+1}\)
+can be represented as the product of three matrices: \(\unitMatrix{N}\),
+\(\matrixK{N}{M}\), and \(\matrixT{M}\)
+\[
+    \begin{bmatrix}
+        N^{2M+1}
+    \end{bmatrix} = \unitMatrix{N} \times \matrixK{N}{M} \times \matrixT{M}
+\]
+is essentially the odd-power identity~\eqref{eq:odd-power-theorem} expressed through matrix multiplication.
