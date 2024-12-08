@@ -22,6 +22,7 @@
 \newcommand \unitMatrix [2][J]{{\mathbf{#1}} \sb{#2}}
 \newcommand \matrixK [3][K]{{\mathbf{#1}} \sb{#2, #3}}
 \newcommand \matrixT [2][T]{{\mathbf{#1}} \sb{#2}}
+\newcommand \bernoulli [2][B] {{#1}\sb{#2}}
 
 % free foot note
 \let\svthefootnote\thefootnote
@@ -101,12 +102,16 @@
     \input{sections/definitions}
 
 
-    \section{Main theorem}\label{sec:main-theorem}
-    \input{sections/02_main_theorem}
+    \section{Introduction and main results}\label{sec:introduction_and_main_results}
+    \input{sections/02_introduction_and_main_results}
+
+
+    \section{Examples} \label{sec:examples}
+    \input{sections/03_examples}
 
 
     \section{Conclusions}\label{sec:conclusions}
-    \input{sections/03_conclusions}
+    \input{sections/04_conclusions}
 
     \bibliographystyle{unsrt}
     \bibliography{OddPowerIdentityViaMultiplicationOfCertainMatrices}
